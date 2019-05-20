@@ -13,3 +13,15 @@ C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\WPF2_3.csproj.GenerateRe
 C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\WPF2_3.csproj.CoreCompileInputs.cache
 C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\WPF2_3.exe
 C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\WPF2_3.pdb
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\ChangeDogWindow.g.cs
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\NewDogOwnerWindow.g.cs
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\NewDogWindow.g.cs
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\ChangeDogWindow.baml
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\NewDogOwnerWindow.baml
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\NewDogWindow.baml
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\bin\Debug\MaterialDesignColors.dll
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\bin\Debug\MaterialDesignThemes.Wpf.dll
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\bin\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\bin\Debug\MaterialDesignThemes.Wpf.xml
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\App.baml
+C:\Users\hjorturpp\source\repos\WPF2_3\WPF2_3\obj\Debug\WPF2_3.csproj.CopyComplete

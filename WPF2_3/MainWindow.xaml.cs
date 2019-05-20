@@ -22,7 +22,7 @@ namespace WPF2_3
     public partial class MainWindow : Window
     {
 
-        ObservableCollection<DogOwner> DogOwners = new ObservableCollection<DogOwner>();
+     //   ObservableCollection<DogOwner> DogOwners = new ObservableCollection<DogOwner>();
 
         public MainWindow()
         {
@@ -35,7 +35,7 @@ namespace WPF2_3
             Seed();
 
             CollectionViewSource DogOwnerViewSource = new CollectionViewSource();
-            DogOwnerViewSource.Source = DogOwners;
+            DogOwnerViewSource.Source = DogContext.DogOwners;
 
             this.DataContext = DogOwnerViewSource;
 
@@ -74,13 +74,43 @@ namespace WPF2_3
             do2.Dogs.Add(dog1);
             do2.Dogs.Add(dog2);
 
-            DogOwners.Add(do1);
-            DogOwners.Add(do2);
+            DogContext.DogOwners.Add(do1);
+            DogContext.DogOwners.Add(do2);
         }
 
         private void btnAdd_Click(object sender, RoutedEventArgs e)
         {
 
+        }
+
+        private void menu_QuitClick(object sender, RoutedEventArgs e)
+        {
+            this.Close();
+        }
+
+        private void menu_NewDogOwnerClick(object sender, RoutedEventArgs e)
+        {
+            NewDogOwnerWindow win = new NewDogOwnerWindow();
+            win.ShowDialog();
+            DogContext.DogOwners.Add((DogOwner)App.Current.Properties["newdogowner"]);
+        }
+
+        private void menu_NewDogClick(object sender, RoutedEventArgs e)
+        {
+            NewDogWindow win = new NewDogWindow();
+            win.ShowDialog();
+
+            DogOwner selectedDogOwner = (DogOwner)cbOwners.SelectedItem;
+            selectedDogOwner.Dogs.Add((Dog)App.Current.Properties["newdog"]);
+
+        }
+
+        private void menu_ChangeDogClick(object sender, RoutedEventArgs e)
+        {
+            ChangeDogWindow win = new ChangeDogWindow();
+            App.Current.Properties["selecteddog"] = lbDogs.SelectedItem;
+            win.ShowDialog();
+            lbDogs.Items.Refresh();
         }
     }
 }
